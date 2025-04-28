@@ -27,14 +27,19 @@
     }
   </style>
 </head>
+
 <body class="bg-black text-white font-sans">
 
   <!-- Top Navigation -->
   <nav class="flex justify-between items-center px-6 py-4 bg-black border-b border-gray-800">
-    <h1 class="text-3xl casino-sign">Harvard Lomax</h1>
+    <div class="flex items-center space-x-4">
+      <img src="images/logo.png" alt="Harvard Lomax logo" class="h-10 w-auto">
+      <h1 class="text-3xl casino-sign sr-only">Harvard Lomax</h1>
+    </div>
     <ul class="flex space-x-6 text-yellow-400 font-semibold">
       <li><a href="#home" class="hover:underline">Home</a></li>
       <li><a href="#bundles" class="hover:underline">Available Bundles</a></li>
+      <li><a href="#why-bulk" class="hover:underline">Why Bulk Investing</a></li>
       <li><a href="#services" class="hover:underline">Services</a></li>
       <li><a href="#about" class="hover:underline">About</a></li>
       <li><a href="#contact" class="hover:underline">Contact</a></li>
@@ -44,62 +49,81 @@
   <!-- Hero Section -->
   <section id="home" class="h-screen hero-section bg-cover bg-center flex items-center justify-center">
     <div class="bg-black bg-opacity-70 p-8 rounded-xl text-center">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4 text-yellow-400">Invest in Las Vegas Real Estate</h2>
-      <p class="text-lg md:text-xl mb-6 text-orange-300">Bulk Portfolios. Tenant-Occupied. Income-Producing from Day One.</p>
-      <a href="#bundles" class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">View Opportunities</a>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 text-yellow-400">Build Wealth in Las Vegas Real Estate</h2>
+      <p class="text-lg md:text-xl mb-6 text-orange-300">Tenant-Occupied | Cash-Flowing | Professionally Managed</p>
+      <a href="#bundles" class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">Browse Investment Packages</a>
     </div>
   </section>
 
   <!-- Featured Investment Bundles -->
   <section id="bundles" class="py-16 px-6 md:px-20 bg-gray-900">
     <h2 class="text-3xl font-bold text-yellow-500 mb-6">Featured Property Packages</h2>
-    <div class="overflow-x-auto">
-      <table class="min-w-full text-left text-sm text-white">
-        <thead class="border-b text-yellow-400">
-          <tr>
-            <th scope="col" class="px-6 py-4">Bundle Name</th>
-            <th scope="col" class="px-6 py-4">Units</th>
-            <th scope="col" class="px-6 py-4">Monthly Income</th>
-            <th scope="col" class="px-6 py-4">Location</th>
-            <th scope="col" class="px-6 py-4">Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b border-gray-700">
-            <td class="px-6 py-4">North Vegas 10-Pack</td>
-            <td class="px-6 py-4">10</td>
-            <td class="px-6 py-4">$18,000</td>
-            <td class="px-6 py-4">North Las Vegas</td>
-            <td class="px-6 py-4 text-yellow-400 hover:underline cursor-pointer"><a href="#contact">Details</a></td>
-          </tr>
-          <tr class="border-b border-gray-700">
-            <td class="px-6 py-4">Henderson Gold Bundle</td>
-            <td class="px-6 py-4">8</td>
-            <td class="px-6 py-4">$14,500</td>
-            <td class="px-6 py-4">Henderson, NV</td>
-            <td class="px-6 py-4 text-yellow-400 hover:underline cursor-pointer"><a href="#contact">Details</a></td>
-          </tr>
-          <tr>
-            <td class="px-6 py-4">Classic Vegas Trio</td>
-            <td class="px-6 py-4">3</td>
-            <td class="px-6 py-4">$5,100</td>
-            <td class="px-6 py-4">Las Vegas</td>
-            <td class="px-6 py-4 text-yellow-400 hover:underline cursor-pointer"><a href="#contact">Details</a></td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="mt-4 text-orange-300 italic">*All properties are currently rented and professionally managed.</p>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col justify-between hover:shadow-lg transition">
+        <div>
+          <h3 class="text-2xl font-bold text-yellow-400 mb-2">North Vegas 10-Pack</h3>
+          <p class="text-orange-300">Units: 10</p>
+          <p class="text-orange-300">Monthly Income: $18,000</p>
+          <p class="text-orange-300">Location: North Las Vegas</p>
+        </div>
+        <a href="#contact" class="mt-4 text-yellow-400 hover:underline">View Details</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col justify-between hover:shadow-lg transition">
+        <div>
+          <h3 class="text-2xl font-bold text-yellow-400 mb-2">Henderson Gold Bundle</h3>
+          <p class="text-orange-300">Units: 8</p>
+          <p class="text-orange-300">Monthly Income: $14,500</p>
+          <p class="text-orange-300">Location: Henderson, NV</p>
+        </div>
+        <a href="#contact" class="mt-4 text-yellow-400 hover:underline">View Details</a>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col justify-between hover:shadow-lg transition">
+        <div>
+          <h3 class="text-2xl font-bold text-yellow-400 mb-2">Classic Vegas Trio</h3>
+          <p class="text-orange-300">Units: 3</p>
+          <p class="text-orange-300">Monthly Income: $5,100</p>
+          <p class="text-orange-300">Location: Las Vegas</p>
+        </div>
+        <a href="#contact" class="mt-4 text-yellow-400 hover:underline">View Details</a>
+      </div>
+
+    </div>
+    <p class="mt-8 text-orange-300 italic">*All properties are currently rented and professionally managed.</p>
+  </section>
+
+  <!-- Why Bulk Investing Section -->
+  <section id="why-bulk" class="py-16 px-6 md:px-20 bg-black">
+    <h2 class="text-3xl font-bold text-yellow-500 mb-6">Why Bulk Real Estate?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-5xl mb-4">📈</div>
+        <h3 class="text-xl font-bold mb-2">Immediate Cash Flow</h3>
+        <p class="text-orange-300">All properties are tenant-occupied from day one, providing instant rental income.</p>
+      </div>
+      <div>
+        <div class="text-5xl mb-4">🧩</div>
+        <h3 class="text-xl font-bold mb-2">Diversification</h3>
+        <p class="text-orange-300">Own multiple units across different neighborhoods and reduce investment risk.</p>
+      </div>
+      <div>
+        <div class="text-5xl mb-4">🏘️</div>
+        <h3 class="text-xl font-bold mb-2">Professional Management</h3>
+        <p class="text-orange-300">Properties come fully managed, ensuring hassle-free ownership and tenant care.</p>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-16 px-6 md:px-20 bg-black">
+  <section id="about" class="py-16 px-6 md:px-20 bg-gray-900">
     <h2 class="text-3xl font-bold text-yellow-500 mb-4">About Harvard Lomax</h2>
     <p class="text-lg leading-relaxed text-gray-300">I’m Harvard Lomax — a Realtor, Broker-Salesman, and Property Manager with 20 years of experience in the Las Vegas market. I specialize in helping luxury clients, savvy investors, and property owners navigate the ever-changing real estate landscape. Whether you're buying your first home or acquiring a 10-property portfolio, I bring strategy, knowledge, and professionalism to every deal.</p>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-16 px-6 md:px-20 bg-gray-900">
+  <section id="services" class="py-16 px-6 md:px-20 bg-black">
     <h2 class="text-3xl font-bold text-yellow-500 mb-10">Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
@@ -124,7 +148,7 @@
   <!-- CTA Banner -->
   <section class="py-16 px-6 md:px-20 bg-yellow-500 text-black text-center">
     <h2 class="text-3xl font-bold mb-4">Get Early Access to Off-Market Properties</h2>
-    <p class="mb-6">Join our investor list and stay ahead of the market.</p>
+    <p class="mb-6">Join our investor list and stay ahead of the market. We respect your privacy.</p>
     <a href="mailto:contact@harvardlomax.com?subject=Investor%20List%20Signup" class="bg-black text-yellow-400 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 transition">Subscribe</a>
   </section>
 
